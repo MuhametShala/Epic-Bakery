@@ -1,0 +1,78 @@
+###
+### Creazione di un nuovo prodotto
+###
+
+POST http://localhost:5050/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "hotdog",
+  "description": "Delicious sandwich with assorted fillings.",
+  "price": 3,
+  "image": "sandwich.jpg",
+  "quantity": 5555
+}
+
+###
+### Creazione di un nuovo prodotto
+###
+
+POST http://localhost:5050/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Pasta",
+  "description": "Classic",
+  "price": 1.99,
+  "image": "baguette.jpg",
+  "quantity": 30
+}
+
+###
+### Creazione di un nuovo prodotto
+###
+
+POST http://localhost:5050/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Sourdough Bread",
+  "description": "Artisanal sourdough bread with a crispy crust.",
+  "price": 3.75,
+  "image": "sourdough.jpg",
+  "quantity": 25
+}
+
+
+####
+GET http://localhost:5050/api/products
+
+#####
+GET http://localhost:5050/api/products/64e88a0063feabec399e2888
+
+#####
+PUT http://localhost:5050/api/products/64e88a0063feabec399e2888
+Content-Type: application/json
+
+{
+  "name": "Nuovo Nome",
+  "description": "Nuova descrizione del prodotto.",
+  "price": 9.99,
+  "image": "nuova-immagine.jpg",
+  "quantity": 10
+}
+
+#####
+PATCH http://localhost:5050/api/products/64e88a0063feabec399e2888
+Content-Type: application/json
+
+{
+  "price": 8.99,
+  "quantity": 15
+}
+
+
+####
+DELETE http://localhost:5050/api/products/64e88a0063feabec399e2888
+
+

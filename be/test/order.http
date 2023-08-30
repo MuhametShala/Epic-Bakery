@@ -1,0 +1,14 @@
+POST http://localhost:5050/orders HTTP/1.1
+
+{
+  "products": [
+    {
+      "productId": "ID_DEL_PRODOTTO",
+      "quantity": 2
+    },
+    {
+      "productId": "ID_ALTRO_PRODOTTO",
+      "quantity": 3
+    }
+  ]
+}
