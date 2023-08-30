@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-// Esegui l'hashing della password prima di salvarla nel database
+// Eseguo l'hashing della password prima di salvarla nel database
 userSchema.pre('save', async function (next) {
   const user = this;
   if (user.isModified('password')) {
